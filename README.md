@@ -25,7 +25,11 @@ There is little point in having a route planner at this stage, as most of the ro
 
 ## I found something wrong with one of the routes
 
-Please [report an issue](https://github.com/samoli/cyclegriduk)
+Please [report an issue](https://github.com/
+
+## A grid you say?
+
+Well no, it’s nothing like a grid, even if you use the roads. That’s the point. But maybe visualising what we have will help encourage improvements to the network.
 
 ## How was it created?
 
