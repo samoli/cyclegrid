@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8' />
+  <meta charset="utf-8" />
   <title>Display a map</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
   <style>
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
+
+    html, body, #map {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .mapboxgl-ctrl-nav > a {
+      border-color: rgba(0,0,0,.1);
+    }
+    .infobox {
+      width: 270px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 3px;
+      box-shadow: 0 0 25px 0 rgba(0,0,0,0.15);
+      background: white;
+      /* System sans-serif fonts */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 12px;
+      line-height: 20px;
+      color: #273d56; /* gray-dark */
+    }
+    .infobox-text {
+      margin-right: 80px;
+      padding: 20px;
+    }
+    .infobox-heading {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+    .infobox-mapbox {
+      background: #f4f7fb; /* gray-faint */
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 0;
+      right: 0;
+    }
+    .mapbox-mark {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      /* Mapbox mark, inlined */
+      /* fill is #607d9c, gray */
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='179' height='179' viewBox='0 0 179 179' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89.1.8C39.9.8 0 40.7 0 89.9 0 139.1 39.9 179 89.1 179c49.2 0 89.1-39.9 89.1-89.1C178.2 40.7 138.3.8 89.1.8zm9.2 34.6c11.4.3 22.9 4.8 31.7 13.7 17.7 17.7 18.3 45.7 1.4 62.7-30.5 30.5-84.8 20.7-84.8 20.7s-9.8-54.3 20.7-84.8c8.5-8.4 19.7-12.5 31-12.3zm1 17.6l-8.7 18-17.9 8.7 17.9 8.7 8.7 18 8.8-18 17.9-8.7-17.9-8.7-8.8-18z' fill='%23607d9c'/%3E%3C/svg%3E%0A");
+    }
+    @media only screen and (max-width:640px) {
+      .leaflet-left .leaflet-control,
+      .mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+          margin-top: 70px;
+      }
+      .infobox {
+          width: 100%;
+          height: 60px;
+          border-bottom-left-radius: 0;
+      }
+      .infobox-text {
+          height: 40px;
+          padding: 10px 20px;
+          overflow: auto;
+          margin-right: 60px;
+      }
+    }
   </style>
 </head>
 <body>
-
-<div id='map'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2Ftb2xpIiwiYSI6ImNqdXh4Y2JqNTBiajU0NG5yNTcxMW43eGcifQ.5UmWjUBoWqPssIHILBG1Rg';
-const map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/samoli/cjuy4lk3b0c0i1ftebnd6evz3',
-  center: [2.317600, 48.866500],
-  zoom: 12.0
-});
-</script>
-
+  <div id="map"></div>
+  <div class="infobox">
+      <div class="infobox-text">
+          <div id="style-name" class="infobox-heading">Car Free Cycle Grid</div>
+          <div><a href="https://github.com/samoli/cyclegriduk">Help make this better</a></div>
+      </div>
+  </div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2Ftb2xpIiwiYSI6ImNqdXh4Y2JqNTBiajU0NG5yNTcxMW43eGcifQ.5UmWjUBoWqPssIHILBG1Rg';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/samoli/cjuy4lk3b0c0i1ftebnd6evz3',
+      center: [-2.812225, 54.580008],
+      zoom: 4.9
+    });
+  </script>
 </body>
 </html>
