@@ -27,7 +27,7 @@ There is little point in having a route planner at this stage, as most of the ro
 
 ## I found something wrong with one of the routes
 
-Please [report an issue](https://github.com/samoli/cyclegrid)
+If a suitable route is missing, or if an inappropriate route is incuded, please [report an issue](https://github.com/samoli/cyclegrid)
 
 ## A grid you say?
 
