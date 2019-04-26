@@ -6,9 +6,9 @@ The map attempts to show surfaced (i.e. non-muddy) cycle routes that do not requ
 
 ## Why?
 
-- To help spot possible routes that might be suitable for children or cyclists who do not want to interact with traffic.
-- To find a place to live that has access to a useful car-free cycle network
-- To identify possible improvements to the local network that could open up access
+- To help discovery of pleasant cycle routes in your area that minimise traffic interaction
+- To find a place to live that has proximity to a useful car-free cycle network
+- To identify possible improvements to the local network that could connect it to useful routes
 
 
 ## What will the routes be like?
@@ -17,9 +17,7 @@ The routes include separate paved cycle paths, canal towpaths, surfaced bridlewa
 
 ## How should I use it
 
-The map data is not good enough to plan a route without first testing it in person.
-
-Scroll around the map in the area you want to find routes for, and look for possible places to cycle to. Then walk or bike the route in person to check that it works in practice.
+Scroll around the map in the area you want to find routes for, and look for possible routes. Then walk or bike the route in person to check that it works in practice. **The map data is not reliable enough to plan a route without first testing it in person.**
 
 ## What about including a route planner?
 
@@ -31,7 +29,7 @@ Please [report an issue](https://github.com/samoli/cyclegriduk)
 
 ## How was it created?
 
-It uses [OpenStreetMap](https://www.openstreetmap.org/) filtered with a query tool called [Overpass Turbo](https://overpass-turbo.eu). I looked at the areas I know well, and worked on the query until it consistenly included routes that I'd be happy to cycle with children in the context of daily life – for example to or from school. That's why muddy fields that technically have cycle access have not been included – they might be fine in summer but impossible to cross in winter.
+It uses [OpenStreetMap](https://www.openstreetmap.org/) data filtered with a query tool called [Overpass Turbo](https://overpass-turbo.eu). I looked at the areas I know well, and worked on the query until it consistenly included routes that I'd be happy to cycle with children in the context of daily life – for example to or from school. That's why muddy fields that technically have cycle access have not been included – they might be fine in summer but impractical or impossible to cross in winter.
 
 The data is addded to a map using [MapBox](https://www.mapbox.com). It was the easiest way to get something up and running, but if you have better ideas, [make a suggestion](https://github.com/samoli/cyclegriduk)
 
