@@ -4,7 +4,7 @@ The map attempts to show surfaced cycle routes that do not require interacting w
 
 <img src="https://raw.githubusercontent.com/samoli/cyclegrid/master/preview.png" width="240" />
 
-[View the map](http://www.cyclegrid.co.uk)
+[View the map](https://www.cyclegrid.co.uk)
 
 ## Why?
 
