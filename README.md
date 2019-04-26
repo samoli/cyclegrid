@@ -2,6 +2,8 @@
 
 The map attempts to show surfaced (i.e. non-muddy) cycle routes that do not require interacting with traffic.
 
+[View the map](https://www.cyclegrid.co.uk)
+
 ## Why?
 
 - To help spot possible routes that might be suitable for children or cyclists who do not want to interact with traffic.
