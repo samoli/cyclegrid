@@ -2,7 +2,7 @@
 
 The map attempts to show surfaced cycle routes that do not require interacting with traffic.
 
-<img src="https://raw.githubusercontent.com/samoli/cyclegrid/master/preview.png" height="240" />
+<img src="https://raw.githubusercontent.com/samoli/cyclegrid/master/preview.png" width="240" />
 
 [View the map](http://www.cyclegrid.co.uk)
 
