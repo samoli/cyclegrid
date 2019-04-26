@@ -1,6 +1,6 @@
 # Car Free Cycle Grid for the UK
 
-The map attempts to show surfaced (i.e. non-muddy) cycle routes that do not require interacting with traffic.
+The map attempts to show surfaced cycle routes that do not require interacting with traffic.
 
 [View the map](http://www.cyclegrid.co.uk)
 
