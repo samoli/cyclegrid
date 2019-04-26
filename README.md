@@ -2,7 +2,7 @@
 
 The map attempts to show surfaced (i.e. non-muddy) cycle routes that do not require interacting with traffic.
 
-[View the map](https://www.cyclegrid.co.uk)
+[View the map](http://www.cyclegrid.co.uk)
 
 ## Why?
 
