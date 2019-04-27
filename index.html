@@ -19,8 +19,9 @@
   <meta property="twitter:image" content="https://www.cyclegrid.co.uk/preview.png">
 
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css" rel="stylesheet" />
+
   <style>
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -83,6 +84,7 @@
       /* fill is #607d9c, gray */
       background-image: url("data:image/svg+xml,%0A%3Csvg width='179' height='179' viewBox='0 0 179 179' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89.1.8C39.9.8 0 40.7 0 89.9 0 139.1 39.9 179 89.1 179c49.2 0 89.1-39.9 89.1-89.1C178.2 40.7 138.3.8 89.1.8zm9.2 34.6c11.4.3 22.9 4.8 31.7 13.7 17.7 17.7 18.3 45.7 1.4 62.7-30.5 30.5-84.8 20.7-84.8 20.7s-9.8-54.3 20.7-84.8c8.5-8.4 19.7-12.5 31-12.3zm1 17.6l-8.7 18-17.9 8.7 17.9 8.7 8.7 18 8.8-18 17.9-8.7-17.9-8.7-8.8-18z' fill='%23607d9c'/%3E%3C/svg%3E%0A");
     }
+
     @media only screen and (max-width:640px) {
       .leaflet-left .leaflet-control,
       .mapboxgl-ctrl-top-left .mapboxgl-ctrl {
@@ -93,11 +95,16 @@
           height: 60px;
           border-bottom-left-radius: 0;
       }
+
       .infobox-text {
           height: 40px;
           padding: 10px 20px;
           overflow: auto;
           margin-right: 60px;
+      }
+
+      .mapboxgl-ctrl.mapboxgl-ctrl-geocoder {
+        margin-top: 26px;
       }
     }
   </style>
@@ -118,6 +125,13 @@
       center: [-2.812225, 54.580008],
       zoom: 4.9
     });
+
+    map.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true
+        },
+        trackUserLocation: true
+    }));
   </script>
 </body>
 </html>
