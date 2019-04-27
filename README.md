@@ -43,7 +43,6 @@ The data is addded to a map using [MapBox](https://www.mapbox.com). It was the e
 The Overpass query used to filter the ways can be found in the [query.txt](query.txt) file. It is roughly the following:
 
 ```
-type:way and ((bicycle!=no and bicycle!=dismount) or highway:cycleway) and (motor_vehicle=no or highway=cycleway or (highway=bridleway and (surface=asphalt or surface=compacted or surface=concrete or surface=paved)))
+type:way and ((bicycle!=no and bicycle!=dismount) or highway:cycleway) and (motor_vehicle=no or highway=cycleway or (highway=bridleway and (surface=asphalt or surface=compacted or surface=concrete or surface=paved)) or (highway=footway and (bicycle=permissive or bicycle=yes)))
 ```
-
 
