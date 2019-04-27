@@ -12,7 +12,6 @@ The map attempts to show surfaced cycle routes that do not require interacting w
 - To find a place to live that has proximity to a useful car-free cycle network
 - To identify possible improvements to the local network that could connect it to useful routes
 
-
 ## What will the routes be like?
 
 The routes include separate paved cycle paths, canal towpaths, surfaced bridleways, river paths, ferry crossings and shared use footpaths.
@@ -31,7 +30,7 @@ If a suitable route is missing, or if an inappropriate route is incuded, please 
 
 ## A grid you say?
 
-Well no, it’s nothing like a grid, even if you use the roads. That’s the point. But maybe visualising what we have will help encourage improvements to the network.
+Well no, it’s nothing like a grid, even if you use the on-road cycleways. But maybe visualising what we have will help encourage improvements to the network.
 
 ## How was it created?
 
